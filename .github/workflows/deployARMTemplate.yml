@@ -25,6 +25,6 @@ jobs:
         uses: azure/arm-deploy@v1
         with:
           scope: resourcegroup
-          subscriptionId: $ {{ env.AZURE_SUBSCRIPTION_ID }}
+          subscriptionId: ${{ env.AZURE_SUBSCRIPTION_ID }}
           resourceGroupName: ${{ env.AZURE_RESOURCE_GROUP }}
           template: ./cicd/practice01/azuredeploy.json
